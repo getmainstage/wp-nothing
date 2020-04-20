@@ -1,5 +1,5 @@
 # Headless WordPress theme
-Just a basic WordPress theme that 'strips' the frontend from the CMS.
+Just a basic WordPress theme that 'strips' the frontend from WordPress.
 
 <img src="https://raw.githubusercontent.com/getmainstage/wp-nothing/master/screenshot.png" />
 
