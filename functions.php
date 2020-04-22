@@ -1,7 +1,7 @@
 <?php
 
 // Enable featured image block
-add_theme_support('post-thumbnails');
+add_theme_support( 'post-thumbnails' );
 
 // Remove default thumbnail sizes
 function nothing_remove_default_images($sizes)
