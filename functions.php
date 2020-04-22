@@ -16,3 +16,9 @@ function nothing_remove_default_images($sizes)
     return $sizes;
 }
 add_filter('intermediate_image_sizes_advanced', 'nothing_remove_default_images');
+
+// Change REST API url to WordPress URL
+add_filter('rest_url', function($url) {
+    $url = str_replace(home_url(), site_url().'/index.php', $url);
+    return $url;
+});
