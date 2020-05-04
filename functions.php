@@ -55,12 +55,6 @@ function nothing_cpt_team_member()
         'items_list_navigation' => __('Team members list navigation', 'mainstage'),
         'filter_items_list'     => __('Filter team members list', 'mainstage'),
     );
-    $rewrite = array(
-        'slug'                  => 'about',
-        'with_front'            => false,
-        'pages'                 => false,
-        'feeds'                 => false,
-    );
     $args = array(
         'label'                 => __('Team Member', 'mainstage'),
         'description'           => __('Mainstage Team Members', 'mainstage'),
@@ -78,8 +72,8 @@ function nothing_cpt_team_member()
         'has_archive'           => false,
         'exclude_from_search'   => false,
         'publicly_queryable'    => true,
-        'rewrite'               => $rewrite,
         'capability_type'       => 'page',
+        'show_in_rest'          => true,
     );
     register_post_type('team_member', $args);
 }
