@@ -57,9 +57,9 @@ function nothing_cpt_team_member()
     );
     $rewrite = array(
         'slug'                  => 'about',
-        'with_front'            => true,
+        'with_front'            => false,
         'pages'                 => false,
-        'feeds'                 => true,
+        'feeds'                 => false,
     );
     $args = array(
         'label'                 => __('Team Member', 'mainstage'),
